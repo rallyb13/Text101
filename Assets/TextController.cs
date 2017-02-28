@@ -218,6 +218,8 @@ public class TextController : MonoBehaviour {
 		
 		if (Input.GetKeyDown(KeyCode.D)) {
 			myState = States.stream;
+			deeper = "deeper";
+			justEntered = true;
 		} else if (Input.GetKeyDown(KeyCode.R)) {
 			if (justEntered == false) {
 				deeper = deeper + " and deeper";
